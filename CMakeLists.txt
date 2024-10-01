@@ -19,7 +19,13 @@ set(msg_files
 # Generate messages
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
-  DEPENDENCIES std_msgs
+  DEPENDENCIES std_msgs builtin_interfaces
 )
 
+install(
+  DIRECTORY msg
+  DESTINATION share/${PREJECT_NAME}
+)
+
+ament_export_dependencies(rosidl_default_runtime)
 ament_package()
