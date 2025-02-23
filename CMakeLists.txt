@@ -24,7 +24,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 install(
   DIRECTORY msg
-  DESTINATION share/${PREJECT_NAME}
+  DESTINATION share/${PROJECT_NAME}
 )
 
 ament_export_dependencies(rosidl_default_runtime)
