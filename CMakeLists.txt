@@ -14,6 +14,7 @@ find_package(std_msgs REQUIRED)
 # Define the message files
 set(msg_files
   "msg/JointPositionTarget.msg"
+  "msg/JointTemperatures.msg"
 )
 
 # Generate messages
